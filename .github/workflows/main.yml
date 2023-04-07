@@ -1,0 +1,18 @@
+name: CI
+
+on:
+ push:
+ branches: main
+   
+ workflow_dispatch:
+   
+jobs:
+ build:
+  runs-on: ubuntu-latest
+   
+   steps:
+   
+     - uses: actions/checkuot@v3
+     - name: run one line skript
+      run: echo hello world  Erjan!!!
+   
