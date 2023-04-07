@@ -2,7 +2,7 @@ name: CI
 
 on:
  push:
- branches: main
+  branches: main
    
  workflow_dispatch:
    
@@ -10,9 +10,10 @@ jobs:
  build:
   runs-on: ubuntu-latest
    
-   steps:
+  steps:
+     
+  - uses: actions/checkout@v3
    
-     - uses: actions/checkuot@v3
-     - name: run one line skript
-      run: echo hello world  Erjan!!!
+  - name: run one line skript
+    run: echo hello world  Erjan!!!
    
